@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gani Developers – Built with Care. Finished with Respect. Premium construction company est. 2015. Water harvesting, home construction, plot development, interior design & renovation." />
+  <meta name="keywords" content="construction company, home construction, Gani Developers, civil contractor, interior design, renovation, plot development, water harvesting" />
+  <meta name="author" content="Ashok Kumar Shetty" />
+  <meta property="og:title" content="GANI DEVELOPERS | Built with Care. Finished with Respect." />
+  <meta property="og:description" content="Premium construction company offering home construction, interior design, renovation, plot development and water harvesting services." />
+  <meta property="og:type" content="website" />
+  <title>GANI DEVELOPERS | Built with Care. Finished with Respect.</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- =========================================
+       LOADING SCREEN
+  ========================================== -->
+  <div id="loader" class="loader">
+    <div class="loader-bg"></div>
+    <div class="loader-content">
+      <canvas id="particle-canvas"></canvas>
+      <div class="loader-logo-wrap">
+        <div class="loader-icon">
+          <img src="assets/images/Logo.png" alt="GANI Developers Logo">
+        </div>
+        <div class="loader-text">
+          <span class="loader-brand">GANI DEVELOPERS</span>
+          <span class="loader-tagline">Built with Care. Finished with Respect.</span>
+        </div>
+        <div class="loader-progress-wrap">
+          <div class="loader-progress-bar">
+            <div class="loader-progress-fill" id="loader-progress-fill"></div>
+          </div>
+          <span class="loader-percent" id="loader-percent">0%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================
+       NAVBAR
+  ========================================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <div class="nav-logo-icon">
+          <img src="assets/images/Logo.png" alt="GANI Developers Logo">
+        </div>
+        <span class="nav-logo-text">GANI <span>DEVELOPERS</span></span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active" id="nav-home">Home</a></li>
+        <li><a href="#services" class="nav-link" id="nav-services">Services</a></li>
+        <li><a href="#projects" class="nav-link" id="nav-projects">Projects</a></li>
+        <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+        <li>
+          <a href="#contact" class="btn-cta-nav" id="nav-quote">Get a Quote</a>
+        </li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+  <!-- =========================================
+       HERO / HOME SECTION
+  ========================================== -->
+  <section id="home" class="hero-section">
+    <div class="hero-bg-anim">
+      <div class="hero-shape s1"></div>
+      <div class="hero-shape s2"></div>
+      <div class="hero-shape s3"></div>
+      <div class="hero-grid"></div>
+    </div>
+
+    <div class="hero-content container">
+      <div class="hero-badge reveal-fade">Established 2015 · Trusted Construction</div>
+      <h1 class="hero-title reveal-up">
+        Building Structures.<br />
+        <span class="hero-title-accent">Building Trust.</span>
+      </h1>
+      <p class="hero-tagline reveal-up delay-1">Built with Care. Finished with Respect.</p>
+      <p class="hero-desc reveal-up delay-2">
+        We build more than just structures — we build trust. 
+        Expert craftsmanship, clean job sites, and friendly service 
+        from the first nail to the final finish.
+      </p>
+      <div class="hero-cta reveal-up delay-3">
+        <a href="#contact" class="btn-primary" id="hero-quote-btn">
+          <i class="fa fa-file-alt"></i> Get a Free Quote
+        </a>
+        <a href="tel:+919845190028" class="btn-secondary" id="hero-call-btn">
+          <i class="fa fa-phone"></i> Call Now
+        </a>
+      </div>
+
+      <!-- Stats Bar -->
+      <div class="hero-stats reveal-up delay-4">
+        <div class="stat-item">
+          <span class="stat-number" data-target="10">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Years Active</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="150">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Projects Done</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="5">0</span><span class="stat-suffix"></span>
+          <span class="stat-label">Services Offered</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator" id="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       FOUNDER SECTION
+  ========================================== -->
+  <section id="founder" class="founder-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Meet the Visionary</span>
+        <h2 class="section-title">Our Founder</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="founder-card reveal-up delay-1">
+        <div class="founder-image-col">
+          <div class="founder-image-wrap">
+            <img src="assets/images/founder.png" alt="Ashok Kumar Shetty - Founder of Gani Developers" id="founder-photo" />
+            <div class="founder-badge-overlay">
+              <i class="fas fa-hard-hat"></i>
+              <span>Est. 2015</span>
+            </div>
+          </div>
+          <div class="founder-social">
+            <a href="tel:+919845190028" class="founder-social-btn" title="Call" id="founder-call">
+              <i class="fas fa-phone"></i>
+            </a>
+            <a href="mailto:askush9@gmail.com" class="founder-social-btn" title="Email" id="founder-email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://wa.me/919845190028" target="_blank" class="founder-social-btn whatsapp" title="WhatsApp" id="founder-whatsapp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="founder-info-col">
+          <div class="founder-role-tag">Civil Contractor &amp; Founder</div>
+          <h3 class="founder-name">Ashok Kumar Shetty</h3>
+          <div class="founder-divider"></div>
+          <p class="founder-bio">
+            With a deep-rooted commitment to structural integrity and client satisfaction, 
+            <strong>Ashok Kumar Shetty</strong> founded Gani Developers to redefine construction experiences. 
+            He brings hands-on expertise from large-scale excavation to interior detailing, 
+            ensuring clean, professional, and stress-free project execution.
+          </p>
+          <div class="founder-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Large-Scale Excavation Expert</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-check-circle"></i>
+              <span>End-to-End Project Management</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Interior Detailing Specialist</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-check-circle"></i>
+              <span>10+ Years Construction Experience</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn-primary founder-cta" id="founder-cta-btn">
+            <i class="fas fa-comments"></i> Start a Conversation
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       SERVICES SECTION
+  ========================================== -->
+  <section id="services" class="services-section">
+    <div class="section-bg-pattern"></div>
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">What We Do</span>
+        <h2 class="section-title">Our Services</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">
+          From groundbreaking to grand opening, we deliver exceptional construction services 
+          tailored to your vision.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card reveal-up delay-1" data-service="water-harvesting" onclick="scrollToProjects('all')" id="service-water">
+          <div class="service-card-inner">
+            <div class="service-icon-wrap">
+              <div class="service-icon">
+                <i class="fas fa-water"></i>
+              </div>
+            </div>
+            <h3 class="service-title">Water Harvesting</h3>
+            <p class="service-desc">
+              Sustainable rainwater harvesting systems designed and installed for residential and 
+              commercial properties. Eco-friendly, efficient, and cost-effective solutions.
+            </p>
+            <div class="service-arrow">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="service-hover-bg"></div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card reveal-up delay-2" data-service="construction" onclick="scrollToProjects('residential')" id="service-construction">
+          <div class="service-card-inner">
+            <div class="service-icon-wrap">
+              <div class="service-icon">
+                <i class="fas fa-home"></i>
+              </div>
+            </div>
+            <h3 class="service-title">Home Construction</h3>
+            <p class="service-desc">
+              Full-scale residential construction from foundation to finish. Quality materials, 
+              skilled craftsmanship, and on-time delivery guaranteed.
+            </p>
+            <div class="service-arrow">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="service-hover-bg"></div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card reveal-up delay-3" data-service="plot" onclick="scrollToProjects('plot')" id="service-plot">
+          <div class="service-card-inner">
+            <div class="service-icon-wrap">
+              <div class="service-icon">
+                <i class="fas fa-map-marked-alt"></i>
+              </div>
+            </div>
+            <h3 class="service-title">Plot Development</h3>
+            <p class="service-desc">
+              Complete land development services including site clearing, boundary construction, 
+              drainage systems, and groundwork preparation.
+            </p>
+            <div class="service-arrow">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="service-hover-bg"></div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card reveal-up delay-4" data-service="interior" onclick="scrollToProjects('interior')" id="service-interior">
+          <div class="service-card-inner">
+            <div class="service-icon-wrap">
+              <div class="service-icon">
+                <i class="fas fa-couch"></i>
+              </div>
+            </div>
+            <h3 class="service-title">Interior Design</h3>
+            <p class="service-desc">
+              Transform your space with our premium interior design service. From concept to 
+              completion, we create spaces that inspire and delight.
+            </p>
+            <div class="service-arrow">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="service-hover-bg"></div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card reveal-up delay-5" data-service="renovation" onclick="scrollToProjects('renovation')" id="service-renovation">
+          <div class="service-card-inner">
+            <div class="service-icon-wrap">
+              <div class="service-icon">
+                <i class="fas fa-tools"></i>
+              </div>
+            </div>
+            <h3 class="service-title">Renovation</h3>
+            <p class="service-desc">
+              Breathe new life into your existing property. Our renovation team handles everything 
+              from minor repairs to complete structural overhauls.
+            </p>
+            <div class="service-arrow">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="service-hover-bg"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       PROJECTS SECTION
+  ========================================== -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Our Portfolio</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">
+          Explore our completed projects across various categories — each one a testament 
+          to our quality and commitment.
+        </p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="project-filters reveal-up delay-1" id="project-filters">
+        <button class="filter-btn active" data-filter="all" id="filter-all">All Projects</button>
+        <button class="filter-btn" data-filter="residential" id="filter-residential">Residential</button>
+        <button class="filter-btn" data-filter="commercial" id="filter-commercial">Commercial</button>
+        <button class="filter-btn" data-filter="interior" id="filter-interior">Interior</button>
+        <button class="filter-btn" data-filter="renovation" id="filter-renovation">Renovation</button>
+        <button class="filter-btn" data-filter="plot" id="filter-plot">Plot Dev</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal-up delay-1" data-category="residential" id="project-1">
+          <div class="project-image-wrap">
+            <img src="assets/images/project-residential.png" alt="Residential Home Construction in Bangalore" loading="lazy" />
+            <div class="project-overlay">
+              <div class="project-overlay-content">
+                <button class="project-lightbox-btn" onclick="openLightbox(0)" id="lightbox-btn-0" aria-label="View project">
+                  <i class="fas fa-expand"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-category-badge">Residential</div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Modern Villa Construction</h3>
+            <div class="project-meta">
+              <span class="project-meta-item"><i class="fas fa-map-marker-alt"></i> Bangalore, Karnataka</span>
+              <span class="project-meta-item"><i class="fas fa-tag"></i> Residential</span>
+            </div>
+            <p class="project-desc">
+              A 3-BHK luxury villa with premium interiors, RCC structure, and complete landscaping. 
+              Delivered on schedule with meticulous attention to detail.
+            </p>
+            <a href="#contact" class="project-cta" id="proj1-cta">
+              Similar Project? <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal-up delay-2" data-category="commercial" id="project-2">
+          <div class="project-image-wrap">
+            <img src="assets/images/project-commercial.png" alt="Commercial Building Construction" loading="lazy" />
+            <div class="project-overlay">
+              <div class="project-overlay-content">
+                <button class="project-lightbox-btn" onclick="openLightbox(1)" id="lightbox-btn-1" aria-label="View project">
+                  <i class="fas fa-expand"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-category-badge">Commercial</div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Commercial Office Complex</h3>
+            <div class="project-meta">
+              <span class="project-meta-item"><i class="fas fa-map-marker-alt"></i> Mangalore, Karnataka</span>
+              <span class="project-meta-item"><i class="fas fa-tag"></i> Commercial</span>
+            </div>
+            <p class="project-desc">
+              A G+3 commercial office complex with modern facade, wide corridors, and 
+              energy-efficient infrastructure. Built to commercial code standards.
+            </p>
+            <a href="#contact" class="project-cta" id="proj2-cta">
+              Similar Project? <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal-up delay-3" data-category="interior" id="project-3">
+          <div class="project-image-wrap">
+            <img src="assets/images/project-interior.png" alt="Interior Design Project" loading="lazy" />
+            <div class="project-overlay">
+              <div class="project-overlay-content">
+                <button class="project-lightbox-btn" onclick="openLightbox(2)" id="lightbox-btn-2" aria-label="View project">
+                  <i class="fas fa-expand"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-category-badge">Interior</div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Luxury Interior Makeover</h3>
+            <div class="project-meta">
+              <span class="project-meta-item"><i class="fas fa-map-marker-alt"></i> Udupi, Karnataka</span>
+              <span class="project-meta-item"><i class="fas fa-tag"></i> Interior Design</span>
+            </div>
+            <p class="project-desc">
+              Complete interior overhaul of a 2500 sq.ft home including custom woodwork, 
+              false ceiling, modular kitchen, and designer lighting solutions.
+            </p>
+            <a href="#contact" class="project-cta" id="proj3-cta">
+              Similar Project? <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal-up delay-4" data-category="renovation" id="project-4">
+          <div class="project-image-wrap">
+            <img src="assets/images/project-renovation.png" alt="Home Renovation Project" loading="lazy" />
+            <div class="project-overlay">
+              <div class="project-overlay-content">
+                <button class="project-lightbox-btn" onclick="openLightbox(3)" id="lightbox-btn-3" aria-label="View project">
+                  <i class="fas fa-expand"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-category-badge">Renovation</div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Complete Home Renovation</h3>
+            <div class="project-meta">
+              <span class="project-meta-item"><i class="fas fa-map-marker-alt"></i> Manipal, Karnataka</span>
+              <span class="project-meta-item"><i class="fas fa-tag"></i> Renovation</span>
+            </div>
+            <p class="project-desc">
+              Full structural renovation of a 30-year-old residential property — new flooring, 
+              waterproofing, fresh plumbing, electrical rewiring, and exterior facelift.
+            </p>
+            <a href="#contact" class="project-cta" id="proj4-cta">
+              Similar Project? <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card reveal-up delay-5" data-category="plot" id="project-5">
+          <div class="project-image-wrap">
+            <img src="assets/images/project-plot.png" alt="Plot Development Project" loading="lazy" />
+            <div class="project-overlay">
+              <div class="project-overlay-content">
+                <button class="project-lightbox-btn" onclick="openLightbox(4)" id="lightbox-btn-4" aria-label="View project">
+                  <i class="fas fa-expand"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-category-badge">Plot Dev</div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Premium Plot Development</h3>
+            <div class="project-meta">
+              <span class="project-meta-item"><i class="fas fa-map-marker-alt"></i> Kundapura, Karnataka</span>
+              <span class="project-meta-item"><i class="fas fa-tag"></i> Plot Development</span>
+            </div>
+            <p class="project-desc">
+              Complete 40×60 site preparation including excavation, compound wall, 
+              drainage systems, and rain-water pit installation. Ready for construction.
+            </p>
+            <a href="#contact" class="project-cta" id="proj5-cta">
+              Similar Project? <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       WHY CHOOSE US
+  ========================================== -->
+  <section class="why-section">
+    <div class="container">
+      <div class="why-inner">
+        <div class="why-text-col reveal-fade">
+          <span class="section-tag light">Why Choose Us</span>
+          <h2 class="section-title light">The Gani Developers Difference</h2>
+          <div class="section-divider light"></div>
+          <p class="why-desc">
+            Our commitment goes beyond bricks and mortar. We pride ourselves on transparent 
+            communication, clean job sites, and delivering exactly what we promise — 
+            on time and within budget.
+          </p>
+          <a href="#contact" class="btn-primary-light" id="why-quote-btn">
+            <i class="fas fa-file-signature"></i> Request a Quote
+          </a>
+        </div>
+        <div class="why-features-col">
+          <div class="why-feature reveal-up delay-1">
+            <div class="why-feature-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="why-feature-text">
+              <h4>Quality Guaranteed</h4>
+              <p>Premium materials and rigorous quality checks at every phase of construction.</p>
+            </div>
+          </div>
+          <div class="why-feature reveal-up delay-2">
+            <div class="why-feature-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="why-feature-text">
+              <h4>On-Time Delivery</h4>
+              <p>Strict project timelines with regular progress updates and milestone meetings.</p>
+            </div>
+          </div>
+          <div class="why-feature reveal-up delay-3">
+            <div class="why-feature-icon">
+              <i class="fas fa-broom"></i>
+            </div>
+            <div class="why-feature-text">
+              <h4>Clean Job Sites</h4>
+              <p>We maintain spotless, organized sites — respecting your property throughout the project.</p>
+            </div>
+          </div>
+          <div class="why-feature reveal-up delay-4">
+            <div class="why-feature-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <div class="why-feature-text">
+              <h4>Transparent Pricing</h4>
+              <p>No hidden charges. Detailed estimates upfront with complete cost breakdowns.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       CONTACT SECTION
+  ========================================== -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact Us</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">
+          Ready to start your project? We'd love to hear from you. 
+          Reach out and let's build something great together.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info-col reveal-fade">
+          <div class="contact-info-card">
+            <h3 class="contact-info-title">Let's Connect</h3>
+            <p class="contact-info-desc">
+              Whether you have a project in mind or just want to know more about our services, 
+              our team is always ready to help.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-detail-item" id="contact-phone-item">
+                <div class="contact-detail-icon">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="contact-detail-text">
+                  <span class="contact-detail-label">Phone</span>
+                  <a href="tel:+919845190028" class="contact-detail-value" id="contact-phone">+91 9845190028</a>
+                </div>
+              </div>
+              <div class="contact-detail-item" id="contact-email-item">
+                <div class="contact-detail-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-detail-text">
+                  <span class="contact-detail-label">Email</span>
+                  <a href="mailto:askush9@gmail.com" class="contact-detail-value" id="contact-email-link">askush9@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-detail-item" id="contact-wa-item">
+                <div class="contact-detail-icon whatsapp-icon">
+                  <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="contact-detail-text">
+                  <span class="contact-detail-label">WhatsApp</span>
+                  <a href="https://wa.me/919845190028" target="_blank" class="contact-detail-value" id="contact-wa-link">Chat with us</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Map Placeholder -->
+            <div class="map-placeholder" id="map-placeholder">
+              <div class="map-placeholder-inner">
+                <i class="fas fa-map-marked-alt"></i>
+                <span>Karnataka, India</span>
+                <small>Map coming soon</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-col reveal-up delay-2">
+          <form class="contact-form" id="contact-form" onsubmit="handleFormSubmit(event)">
+            <h3 class="form-title">Send Us a Message</h3>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name">Full Name *</label>
+                <input type="text" id="contact-name" name="name" placeholder="Your full name" required />
+              </div>
+              <div class="form-group">
+                <label for="contact-phone-input">Phone Number *</label>
+                <input type="tel" id="contact-phone-input" name="phone" placeholder="+91 XXXXXXXXXX" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email-input">Email Address</label>
+              <input type="email" id="contact-email-input" name="email" placeholder="your@email.com" />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-service">Service Required *</label>
+              <select id="contact-service" name="service" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="water-harvesting">Water Harvesting</option>
+                <option value="home-construction">Home Construction</option>
+                <option value="plot-development">Plot Development</option>
+                <option value="interior-design">Interior Design</option>
+                <option value="renovation">Renovation</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Project Details</label>
+              <textarea id="contact-message" name="message" rows="5" placeholder="Tell us about your project, location, budget, timeline..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-form-submit" id="form-submit-btn">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+
+            <div class="form-success" id="form-success" style="display:none;">
+              <i class="fas fa-check-circle"></i>
+              Thank you! We'll get back to you within 24 hours.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       FOOTER
+  ========================================== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand-col">
+            <div class="footer-logo">
+              <div class="footer-logo-icon">
+                <img src="assets/images/Logo.png" alt="GANI Developers Logo">
+              </div>
+              <span class="footer-logo-text">GANI DEVELOPERS</span>
+            </div>
+            <p class="footer-tagline">"Built with Care. Finished with Respect."</p>
+            <p class="footer-desc">
+              Your trusted construction partner since 2015. 
+              Building structures, building trust.
+            </p>
+            <div class="footer-contact-quick">
+              <a href="tel:+919845190028" id="footer-phone"><i class="fas fa-phone"></i> +91 9845190028</a>
+              <a href="mailto:askush9@gmail.com" id="footer-email"><i class="fas fa-envelope"></i> askush9@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="footer-links-col">
+            <h4 class="footer-col-title">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#home" id="footer-nav-home"><i class="fas fa-chevron-right"></i> Home</a></li>
+              <li><a href="#services" id="footer-nav-services"><i class="fas fa-chevron-right"></i> Services</a></li>
+              <li><a href="#projects" id="footer-nav-projects"><i class="fas fa-chevron-right"></i> Projects</a></li>
+              <li><a href="#contact" id="footer-nav-contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+              <li><a href="#contact" id="footer-nav-quote"><i class="fas fa-chevron-right"></i> Get a Quote</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-services-col">
+            <h4 class="footer-col-title">Our Services</h4>
+            <ul class="footer-links">
+              <li><a href="#services" id="footer-svc-water"><i class="fas fa-chevron-right"></i> Water Harvesting</a></li>
+              <li><a href="#services" id="footer-svc-home"><i class="fas fa-chevron-right"></i> Home Construction</a></li>
+              <li><a href="#services" id="footer-svc-plot"><i class="fas fa-chevron-right"></i> Plot Development</a></li>
+              <li><a href="#services" id="footer-svc-interior"><i class="fas fa-chevron-right"></i> Interior Design</a></li>
+              <li><a href="#services" id="footer-svc-reno"><i class="fas fa-chevron-right"></i> Renovation</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-cta-col">
+            <h4 class="footer-col-title">Start a Project</h4>
+            <p class="footer-cta-desc">Ready to build? Let's talk about your vision.</p>
+            <a href="#contact" class="footer-cta-btn" id="footer-cta-quote">
+              <i class="fas fa-file-alt"></i> Get a Free Quote
+            </a>
+            <a href="tel:+919845190028" class="footer-cta-btn secondary" id="footer-cta-call">
+              <i class="fas fa-phone"></i> Call Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="footer-copy">
+          &copy; 2024 <strong>Gani Developers</strong>. All Rights Reserved.
+          Built with <i class="fas fa-heart" style="color:#E62E2D;"></i> for quality construction.
+        </p>
+        <p class="footer-credit">Est. 2015 · Karnataka, India</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================
+       LIGHTBOX
+  ========================================== -->
+  <div class="lightbox-overlay" id="lightbox-overlay" onclick="closeLightbox()">
+    <button class="lightbox-close" id="lightbox-close" onclick="closeLightbox()" aria-label="Close lightbox">
+      <i class="fas fa-times"></i>
+    </button>
+    <button class="lightbox-prev" id="lightbox-prev" onclick="prevLightbox(event)" aria-label="Previous">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <img src="" alt="" id="lightbox-img" />
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+    <button class="lightbox-next" id="lightbox-next" onclick="nextLightbox(event)" aria-label="Next">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+
+  <!-- =========================================
+       WHATSAPP FLOATING BUTTON
+  ========================================== -->
+  <a href="https://wa.me/919845190028" target="_blank" class="whatsapp-float" id="whatsapp-float" aria-label="Chat on WhatsApp">
+    <div class="whatsapp-float-icon">
+      <i class="fab fa-whatsapp"></i>
+    </div>
+    <div class="whatsapp-float-tooltip">Chat with us!</div>
+  </a>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" onclick="scrollToTop()" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
