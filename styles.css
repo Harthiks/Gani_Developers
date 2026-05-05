@@ -670,7 +670,7 @@ select, input, textarea { font-family: var(--font-body); }
 }
 .founder-image-wrap {
   position: relative;
-  width: 260px;
+  width: 180px;
   height: 260px;
   border-radius: var(--radius-xl);
   overflow: hidden;
